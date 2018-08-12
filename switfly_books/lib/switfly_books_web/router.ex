@@ -17,7 +17,9 @@ defmodule SwitflyBooksWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/books", BookController, :index 
   end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", SwitflyBooksWeb do
